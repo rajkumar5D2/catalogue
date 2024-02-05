@@ -18,7 +18,7 @@
 // }
 
 pipeline {
-    agent any 
+    agent { node {label 'node-2'} } 
     stages {
         stage('Stage 1') {
             steps {
