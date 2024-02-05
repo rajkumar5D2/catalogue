@@ -25,5 +25,10 @@ pipeline {
                 echo 'Hello world!' 
             }
         }
+        stage('unit test') {
+            steps {
+                echo 'performing unit testing!' 
+            }
+        }
     }
 }
