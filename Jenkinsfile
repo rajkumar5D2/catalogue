@@ -34,7 +34,7 @@ pipeline {
         stage('Sonar Scan') {
             steps {
                 sh 'ls -ltr'
-                sh 'sudo sonar-scanner'
+                sh 'sonar-scanner'
             }
         }
     }
